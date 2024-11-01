@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1730476111 source:d:\dsa\dsa lab tsk\src\calculator.cpp
+	"Calculator.h"
+	<iostream>
+
+1730476111 d:\dsa\dsa lab tsk\include\calculator.h
+
+1730476691 source:d:\dsa\dsa lab tsk\main.cpp
+	<iostream>
+	"Calculator.h"
+
