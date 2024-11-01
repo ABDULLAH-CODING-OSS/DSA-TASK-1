@@ -13,7 +13,7 @@ int main()
      cin>>n2;
 
    Calculator obj;
-   cout<<"fv kvre"<<endl;
+
 
    cout<<"The Sum Is : "<<obj.sum(n1,n2)<<endl;
    cout<<"The Sub Is : "<<obj.sub(n1,n2)<<endl;
