@@ -144,7 +144,7 @@ void Array::indexAt(int &index) {
 }
 void Array::selectionSortAscending() {
     
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size-1; i++) {
         int minIndex = i;
         for (int j = i + 1; j < size; j++) {
 
@@ -162,7 +162,7 @@ void Array::selectionSortAscending() {
 }
 void Array::selectionSortDescending() {
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size-1; i++) {
         int maxIndex = i;
         for (int j = i + 1; j < size; j++) {
 
@@ -178,20 +178,95 @@ void Array::selectionSortDescending() {
     }
 
 }
-void Array::sorting() {
-    for (int i = 0; i < size; i++) {
-        for (int j = i+1; j < size; j++) {
-            if (arr[i] > arr[j]) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+void Array::bubbleSortingAscending() {
+    for (int i = 0; i < size - 1; i++) {
+        bool isSwap = false;
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                isSwap = true;
             }
+        }
+        if (!isSwap) {
+            cout << "Already Sorted " << endl;
+            break;
+        }
+    }
+
+
+
+}void Array::bubbleSortingDescending() {
+    for (int i = 0; i < size - 1; i++) {
+        bool isSwap = false;
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] < arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                isSwap = true;
+            }
+        }
+        if (!isSwap) {
+            cout << "Already Sorted " << endl;
+            break;
         }
     }
 
 
 
 }
+void Array::insertionSortAscending() {
+    for (int i = 1; i < size; i++) {
+        int curr = arr[i];
+        int previous = arr[i - 1];
+        while (previous >= 0 && arr[previous] > curr) {
+            arr[previous + 1] = arr[previous];
+            previous--;
+        }
+        arr[previous + 1] = curr;
+    }
+
+}
+void Array::insertionSortDescending() {
+    for (int i = 1; i < size; i++) {
+        int curr = arr[i];
+        int previous = arr[i - 1];
+        while (previous >= 0 && arr[previous] < curr) {
+            arr[previous + 1] = arr[previous];
+            previous--;
+        }
+        arr[previous + 1] = curr;
+    }
+
+}
+void Array::binarySearch(int key) {
+    int start = 0;
+        int end = size-1;
+        bool flag = false;
+    
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] == key) {
+                cout << "Element found at index : " <<mid<< endl;
+                flag = true;
+                return;
+            }
+            if (arr[mid] > key) {
+                end = mid - 1;
+            }
+            else if (arr[mid] < key) {
+                start = mid +1;
+            }
+
+        }
+        if (!flag) {
+            cout << "not found oops" << endl;
+        }
+
+}
+
 void Array::Print() {
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " " << endl;

@@ -18,7 +18,11 @@ public:
     void indexAt(int &index);
     void selectionSortAscending();
     void selectionSortDescending();
-    void sorting();
+    void bubbleSortingAscending();
+    void bubbleSortingDescending();
+    void insertionSortAscending();
+    void insertionSortDescending();
+    void binarySearch(int key);
     void Print();
 
 

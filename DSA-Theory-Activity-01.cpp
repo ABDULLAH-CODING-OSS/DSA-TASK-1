@@ -5,6 +5,10 @@ using namespace std;
 
 int main()
 {
+    // Name: Abdullah Javed 
+    // ID: F2023065162
+    // Section W-5 : DSA BILAL ARIF 
+    // Activity : 01
     
     int size=0;
     cout << "Enter the  Current Size of Array " << endl;
@@ -23,45 +27,54 @@ int main()
 
     }
     Array*obj1=new Array(arr,size,capacity);
-   /* obj1->insertAtHead(5);
-    obj1->Print();
-    int key;
-    cout << "If you want to delete an element than enter that element" << endl;
-    cin >> key;
-    obj1->removeElement(key);
-    obj1->Print();
-    int existingElement;
-    cout << "ENTER THE ELEMENT YOU WANT TO CHANGE/REPLACE" << endl;
-    cin >> existingElement;
-    int updatedElement;
-    cout << "Enter The ELEMENT YOU WANT In The ARRAY" << endl;
-    cin >> updatedElement;
-    obj1->updateElement(existingElement,updatedElement);
-    obj1->Print();
-    int searchedElement;
-    cout << "Enter The Element To be Searched " << endl;
-    cin >> searchedElement;
-    obj1->linearSearchElement(searchedElement);*/
-   /* int currIndex;
-    cout << "Enter the current index from you which you want to moveBack " << endl;
-    cin >> currIndex;
-    obj1->moveBack(currIndex);
-    int currIndex1;
-    cout << "Enter the current index from you which you want to moveForward " << endl;
-    cin >> currIndex1;
-    obj1->moveForward(currIndex);
-    int index;
-    cout << "Enter the index of which element is requires " << endl;
-    cin >> index;
-    obj1->indexAt(index);*/
-   /* obj1->selectionSortAscending();
-    obj1->Print();
-    obj1->selectionSortDescending();
-    obj1->Print();*/
-    obj1->sorting();
-    obj1->Print();
+   ///* obj1->insertAtHead(5);
+   //* obj1->insertAtTail(7);
+   // obj1->Print();
+   // int key;
+   // cout << "If you want to delete an element than enter that element" << endl;
+   // cin >> key;
+   // obj1->removeElement(key);
+   // obj1->Print();
+   // int existingElement;
+   // cout << "ENTER THE ELEMENT YOU WANT TO CHANGE/REPLACE" << endl;
+   // cin >> existingElement;
+   // int updatedElement;
+   // cout << "Enter The ELEMENT YOU WANT In The ARRAY" << endl;
+   // cin >> updatedElement;
+   // obj1->updateElement(existingElement,updatedElement);
+   // obj1->Print();
+   // int searchedElement;
+   // cout << "Enter The Element To be Searched " << endl;
+   // cin >> searchedElement;
+   // obj1->linearSearchElement(searchedElement);*/
+   ///* int currIndex;
+   // cout << "Enter the current index from you which you want to moveBack " << endl;
+   // cin >> currIndex;
+   // obj1->moveBack(currIndex);
+   // int currIndex1;
+   // cout << "Enter the current index from you which you want to moveForward " << endl;
+   // cin >> currIndex1;
+   // obj1->moveForward(currIndex);
+   // int index;
+   // cout << "Enter the index of which element is requires " << endl;
+   // cin >> index;
+   // obj1->indexAt(index);*/
+   ///* obj1->selectionSortAscending();
+   // obj1->Print();
+   // obj1->selectionSortDescending();
+   // obj1->Print();*/
+   // obj1->bubbleSortingAscending();
+   // obj1->Print();
+   // obj1->insertionSortAscending();
+   // obj1->Print();
+   // obj1->bubbleSortingDescending();
+   // obj1->insertionSortDescending();
+   // int key;
+   // cout << "Enter the key to be seaeched by binary method" << endl;
+   // cin >> key;
+   // obj1->binarySearch(key);
 
-    
+   // 
 
 
  /*  Array obj;
